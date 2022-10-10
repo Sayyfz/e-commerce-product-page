@@ -1,9 +1,9 @@
 
 import './css/App.css';
-import Navbar from './components/Navbar';
-import ProductPage from './components/ProductPage';
+import Navbar from './components/Navbar.js';
+import ProductPage from './components/ProductPage.js';
 import { useState } from 'react';
-import CartMenu from './components/CartMenu';
+import CartMenu from './components/CartMenu.js';
 
 function App() {
 
