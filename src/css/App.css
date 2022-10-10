@@ -1,0 +1,119 @@
+/* Start Global Rules */
+:root {
+--primary-color-orange: hsl(26, 100%, 55%);
+--primary-color-page-orange: hsl(25, 100%, 94%);
+
+--neutral-color-very-dark-blue:hsl(220, 13%, 13%);
+--neutral-color-dark-greyish-blue:hsl(219, 9%, 45%);
+--neutral-color-greyish-blue:hsl(220, 14%, 75%);
+--neutral-color-light-greyish-blue:hsl(231, 68%, 96%);
+--neutral-color-white:hsl(0, 0%, 100%);
+--neutral-color-black-lightbox-bg:hsl(0, 0%, 0%);
+
+}
+html {
+/* min-width: 320px; */
+}
+body {
+    font-family: 'Kumbh Sans' 'https://fonts.google.com/specimen/Kumbh+Sans';
+font-weight: 400;
+}
+
+p {
+color: var(--neutral-color-dark-greyish-blue);
+font-size: 16px;
+}
+
+
+.page-wrapper {
+    position: relative;
+}
+.navbar {
+    border-bottom: 1px solid var(--neutral-color-light-greyish-blue);
+}
+
+.navbar-nav li {
+    position: relative;
+    text-align: center;
+}
+.offcanvas-body ul li {
+    margin-left: 1.5em;
+}
+
+.nav-item a {
+    color: var(--neutral-color-dark-greyish-blue);
+    text-decoration:none;
+    transition: 0.3s;
+    
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color-orange);
+    left:0;
+    width: 0;
+    bottom: -34px;
+    transition: .4s ease;
+}
+.nav-item a:hover {
+    color: var(--neutral-color-black-lightbox-bg);
+}
+
+
+
+.navbar-nav a.active {
+    color: var(--primary-color-orange);
+}
+
+.nav-profile-img {
+    max-width: 1.6rem;
+}
+
+.nav-icons {
+    position: absolute;
+    right: 2rem;
+}
+
+.nav-icons img {
+    cursor: pointer;
+}
+
+@media(min-width: 1400px) {
+    .container-lg {
+        max-width: 1000px!important;
+    }
+}
+@media (max-width: 768px) {
+ 
+    .navbar-nav a {
+        text-align: start;
+        padding-left: 1em;
+    }
+    .offcanvas-body {
+        max-width: 60%!important;
+    }
+    
+}
+@media (max-width: 400px) {
+
+    .offcanvas-body {
+        max-width: 60%;
+    }
+    
+    .nav-icons {
+        position: absolute;
+        right: 1rem;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .nav-profile-img {
+        max-width: 2.5rem;
+    }
+    .nav-item a:hover:after {
+        width: 100%;
+        height: 3px;
+    }
+}

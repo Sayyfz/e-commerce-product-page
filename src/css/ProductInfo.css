@@ -1,0 +1,127 @@
+.product-info {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.product-info .row {
+    margin-left: 0!important;
+}
+
+
+.product-info h6 {
+    font-size: .75rem;
+    color: var(--primary-color-orange);
+    filter: drop-shadow(0 2px 2px var(--primary-color-page-orange));
+} 
+
+.product-info h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) and (max-width:1200px) {
+    .product-info h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .product-info p {
+        font-size: .85rem;
+    }
+    .product-info h6 {
+        font-size: .6rem;
+    }
+}
+
+
+.price {
+    position: relative;
+}
+.price p:nth-child(2) {
+    background-color: var(--primary-color-page-orange);
+    color: var(--primary-color-orange);
+    height: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: .5rem;
+    padding: 3px 7px;
+}
+
+.price p:last-child {
+    color: var(--neutral-color-greyish-blue);
+    text-decoration: line-through;
+    font-weight: 700;
+    margin-top: .5rem;   
+}
+
+.add-cart-btn, .incrementing-btn , .incrementing-btn button {
+    border: none;
+    border-radius: 10px;
+}
+.add-cart-btn, .incrementing-btn {
+    width: 100%;
+}
+
+
+.incrementing-btn {
+    background-color: var(--neutral-color-light-greyish-blue);
+    flex-wrap: nowrap;
+    font-weight: 700;
+    border-radius: 15px;
+    height: 55.5px;
+    text-align: center;
+    
+}
+
+.add-cart-btn {
+    background-color: var(--primary-color-orange);
+    font-weight: 600;
+    filter: drop-shadow(0px 0 0 hsla(26, 100%, 55%, 0.452));
+    transition: .3s ease;
+    
+}
+.add-cart-btn:hover {
+    filter: drop-shadow(0px 10px 30px hsla(26, 100%, 55%, 0.247));
+
+}
+.add-cart-btn p {
+    margin: 0;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .price p:nth-child(2) {
+        position: relative;
+        bottom: .4em;
+
+    }
+    .add-cart-btn {
+        min-width: 65%;
+        max-width: 20em !important;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+        height: fit-content;
+    }
+    .incrementing-btn button {
+        transition:  0.3 ease;
+    }
+    .incrementing-btn button:hover {
+        background-color: var(--neutral-color-greyish-blue);
+    }
+    .product-info {
+        padding-left: 2.5em;
+        padding-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+}
+
+
+@media (max-width: 300px) {
+    .price {
+        align-items: center;
+    }
+    .price h1 {
+        font-size: 20px;
+    }
+}
